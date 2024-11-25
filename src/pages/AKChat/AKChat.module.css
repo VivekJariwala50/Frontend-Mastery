@@ -1,0 +1,159 @@
+.userChatImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.userChatImg *{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+.msgNumberText{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.userChatListWrap li{
+    padding: 15px 10px;
+}
+.userChatListWrap li:hover{
+    background-color: rgba(var(--kingfisher-rgb), 0.2);
+}
+.userChatListWrap{
+    height: calc(100vh - 213px);
+    overflow-y: auto;
+}
+.onlineLabel{
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-green);
+    border-radius: 100%;
+}
+.chatCardBody{
+    --chatCardBodyHeight: 50px;
+    --chatFooterHeight: 70px;
+    --shareIcon: 40px;
+}
+.chatHead{
+    min-height: var(--chatCardBodyHeight);
+    border-bottom: 1px solid var(--text-color);
+}
+.userChatMsg{
+    min-width: 200px;
+    background-color: rgba(var(--kingfisher-rgb), 0.15);
+    border-radius: 7px;
+}
+.shareIcon{
+    min-width: var(--shareIcon);
+    min-height: var(--shareIcon);
+    background-color: rgba(var(--kingfisher-rgb), 0.15);
+    border-radius: 100%;
+}
+.shareIcon:hover{
+    background-color: rgba(var(--kingfisher-rgb), 0.25);
+}
+.msgTimeText{
+    width: calc(100% - var(--shareIcon) - 10px);
+}
+.userChatMsgWrap:not(:last-child) > div{
+    margin-bottom: 15px;
+}
+.userChatFooter > div{
+    width: 100%;
+}
+.userChatFooter{
+    min-height: var(--chatFooterHeight);
+    border-top: 1px solid var(--text-color);
+    padding: 15px 0 0;
+}
+.userChatFooter .sendMsgBtn{
+    min-height: 45px;
+    min-width: 50px;
+}
+.userChatFooter .sendMsgBtn i{
+    font-size: 24px;
+}
+.userChatContent{
+    height: calc(100vh - 268px);
+    overflow-y: auto;
+    padding: 20px 0;
+}
+/* responsive css start */
+@media (max-width: 1599px){
+    .userChatFooter .sendMsgBtn{
+        min-height: 40px;
+    }
+}
+@media (max-width: 1439px){
+    .userChatImg{
+        width: 30px;
+        height: 30px;
+    }
+    .userChatFooter .sendMsgBtn{
+        min-height: 40px;
+    }
+}
+@media (min-width: 992px){
+    .openChatSidebarIcon{
+        display: none;
+    }
+}
+@media (max-width: 991px){
+    .openChatSidebarIcon:global.ant-btn{
+        min-width: 40px;
+        min-height: 40px;
+        z-index: 9;
+        right: 20px;
+    }
+    .openChatSidebarIcon i{
+        font-size: 24px;
+    }
+    .chatSidebarPanelWrap{
+        position: fixed;
+        z-index: 9;
+        border: 1px solid var(--text-color);
+        border-radius: 7px;
+        max-height: calc(100vh - 110px);
+        overflow-y: auto;
+        padding: 0 !important;
+        transform: translateX(-200%);
+        transition: var(--transition-all);
+    }
+    .chatSidebarPanelWrap.chatSidebarPanelOpen{
+        transform: translateX(0);
+    }
+    .chatSidebarPanelWrap .openChatSidebarIcon{
+        transform: rotate(180deg);
+        min-width: 35px;
+        min-height: 35px;
+        right: 3px;
+        top: 5px;
+    }
+    .closeChatSidebarIcon{
+        display: none;
+    }
+    .userChatListWrap{
+        height: calc(100vh - 210px);
+    }
+}
+@media (max-width: 767px){
+    .userChatContent{
+        height: calc(100vh - 248px);
+    }
+    .userChatListWrap{
+        height: calc(100vh - 202px);
+    }
+    .chatSidebarPanelWrap{
+        max-height: calc(100vh - 90px);
+    }
+}
+@media (max-width: 575px){
+    .userChatContent{
+        height: calc(100vh - 260px);
+    }
+}
+/* responsive css end */
+
+.settingsOpen {
+    background-color: red;
+}

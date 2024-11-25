@@ -1,0 +1,16 @@
+:global .ant-tooltip {
+  color: var(--title-color);
+  --antd-arrow-background-color: var(--kingfisher);
+  z-index: 9999;
+}
+
+:global .ant-tooltip .ant-tooltip-inner {
+  background-color: var(--antd-arrow-background-color);
+}
+
+.AKTooltip:global.ant-btn,
+.AKTooltip:global.ant-btn.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover  {
+  background: var(--kingfisher);
+  border-color: var(--kingfisher);
+  color: var(--white);
+}

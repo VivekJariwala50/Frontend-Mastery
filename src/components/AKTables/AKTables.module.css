@@ -1,0 +1,100 @@
+.table {
+    background-color: transparent;
+}
+
+.table:global.ant-table-wrapper .ant-table {
+    color: var(--title-color);
+    background: transparent;
+}
+
+.table:global.ant-table-wrapper .ant-table .ant-table-container,
+.table:global.ant-table-wrapper .ant-table .ant-table-content {
+    min-height: inherit;
+}
+
+.table:global.ant-table-wrapper .ant-table-tbody>tr>th,
+.table:global.ant-table-wrapper .ant-table-tbody>tr>td {
+    color: var(--text-color);
+    border: 0 !important;
+}
+
+.table:global.ant-table-wrapper .ant-table-thead>tr>th,
+.table:global.ant-table-wrapper .ant-table-thead>tr>td {
+    border-bottom: 1px solid var(--swifts);
+    color: var(--title-color);
+    background: transparent;
+}
+
+.table:global.ant-table-wrapper .ant-table-tbody .ant-table-row.ant-table-row-selected>.ant-table-cell,
+.table:global.ant-table-wrapper .ant-table-tbody .ant-table-row>.ant-table-cell-row-hover {
+    background: var(--parrot);
+}
+
+.table:global.ant-table-wrapper .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+.table:global.ant-table-wrapper .ant-table-thead>tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    content: unset;
+}
+
+.table:global.ant-table-wrapper .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: var(--kingfisher);
+    border: 1px solid;
+    border-color: var(--kingfisher);
+}
+
+.table:global.ant-table-wrapper tbody tr:nth-child(odd) {
+    background-color: var(--parrot);
+}
+
+
+.table:global.ant-table-wrapper .ant-table-cell,
+.table:global.ant-table-wrapper .ant-table-thead>tr>th,
+.table:global.ant-table-wrapper .ant-table-tbody>tr>th,
+.table:global.ant-table-wrapper .ant-table-tbody>tr>td,
+.table:global.ant-table-wrapper tfoot>tr>th,
+.table:global.ant-table-wrapper tfoot>tr>td {
+    padding: 8px;
+    white-space: nowrap;
+    transition: var(--transition-all);
+}
+
+.table :global .ant-pagination .ant-pagination-item {
+    background-color: var(--swifts);
+    box-shadow: 0 0.125rem 0.25rem rgba(15, 20, 34, .4);
+    color: var(--title-color);
+}
+
+.table :global .ant-pagination .ant-pagination-item-active {
+    background-color: var(--kingfisher);
+    border-color: var(--kingfisher);
+}
+
+.table :global .ant-pagination .ant-pagination-item a {
+    color: var(--title-color);
+}
+
+.table :global .ant-pagination .ant-pagination-item-active a {
+    color: white;
+}
+
+.table :global .ant-pagination .ant-pagination-disabled .ant-pagination-item-link,
+.table :global .ant-pagination .ant-pagination-disabled:hover .ant-pagination-item-link {
+    color: var(--text-color);
+}
+
+.table :global .ant-pagination .ant-pagination-prev button,
+.table :global .ant-pagination .ant-pagination-next button {
+    color: var(--title-color);
+}
+
+.table :global .ant-table-cell-scrollbar {
+    display: none;
+}
+
+.table :global .ant-table-cell.w-pr-lg {
+    padding-right: 80px !important;
+}
+
+table th,
+table tr{
+    transition: var(--transition-all);
+}

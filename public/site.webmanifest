@@ -1,0 +1,17 @@
+{
+    "short_name": "Annakoot",
+    "name": "Annakoot",
+    "icons": [
+        {
+            "src": "/android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "id": "/Home",
+    "start_url": "/",
+    "scope": "/",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

@@ -1,0 +1,85 @@
+.alert {
+    background-color: transparent;
+    border: 1px solid;
+    border-color: var(--kingfisher);
+    color: var(--title-color);
+    padding: 10px 15px;
+}
+
+.alert :global .ant-alert-close-icon .anticon-close {
+    color: #18a718;
+    transition: var(--transition-all);
+}
+
+.alert :global .ant-alert-close-icon .anticon-close:hover {
+    color: var(--kingfisher);
+}
+
+.default {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.default :global .ant-alert-icon,
+.default :global .ant-alert-close-icon .anticon-close,
+.default :global .ant-alert-message,
+.default :global .ant-alert-description {
+    color: var(--text-color);
+}
+
+
+.success {
+    border-color: #18a718;
+    color: #18a718;
+}
+
+.success :global .ant-alert-icon,
+.success :global .ant-alert-close-icon .anticon-close,
+.success :global .ant-alert-message,
+.success :global .ant-alert-description {
+    color: #18a718;
+}
+
+.info {
+    border-color: #37A5FE;
+    color: #37A5FE;
+}
+
+.info :global .ant-alert-icon,
+.info :global .ant-alert-close-icon .anticon-close,
+.info :global .ant-alert-message,
+.info :global .ant-alert-description {
+    color: #37A5FE;
+}
+
+.warning {
+    border-color: yellow;
+    color: yellow;
+}
+
+.warning :global .ant-alert-icon,
+.warning :global .ant-alert-close-icon .anticon-close,
+.warning :global .ant-alert-message,
+.warning :global .ant-alert-description {
+    color: yellow;
+}
+
+.error {
+    border-color: #b51a1a;
+    color: #b51a1a;
+}
+
+.error :global .ant-alert-icon,
+.error :global .ant-alert-close-icon .anticon-close,
+.error :global .ant-alert-message,
+.error :global .ant-alert-description {
+    color: #b51a1a;
+}
+
+/* RESPONSIVE STYLES START */
+
+@media (max-width:575px) {
+    .alert {
+        padding: 10px;
+    }
+}

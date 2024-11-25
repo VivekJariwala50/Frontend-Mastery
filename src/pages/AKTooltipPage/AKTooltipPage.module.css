@@ -1,0 +1,23 @@
+.AKTooltipCardWrapper {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+}
+
+/* Responsive Styles Start */
+
+@media (max-width:1199px) {
+  .AKTooltipCardWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:767px) {
+  .AKTooltipCardWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tooltipDirectionCard {
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,44 @@
+.colorPlateLabel {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: max-content;
+    height: 100%;
+    cursor: pointer;
+    padding: 4px;
+    border: 2px solid;
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+.colorPlate {
+    height: 100%;
+    width: 45px;
+    display: inline-flex;
+}
+
+.colorPlateInput {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.colorPlateContainer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.check-with-label:checked+.label-for-check {
+    font-weight: bold;
+}
+
+.colorPlateInput:checked+.colorPlateLabel {
+    border-color: var(--kingfisher);
+}

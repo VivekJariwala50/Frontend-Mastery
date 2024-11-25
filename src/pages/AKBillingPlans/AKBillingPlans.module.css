@@ -1,0 +1,14 @@
+.accountProfileCard ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.accountProfileCard {
+    padding: 50px 20px 20px 20px;
+}
+
+/* RESPONSIVE STYLES START */
+@media (max-width:991px) {
+    .accountProfileCard {
+        padding: 50px 8px 8px 8px;
+    }
+}

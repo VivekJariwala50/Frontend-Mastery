@@ -1,0 +1,14 @@
+.carousel :global .slick-dots li button {
+    background: var(--kingfisher);
+    opacity: 0.5;
+}
+
+
+.carousel :global .slick-dots li.slick-active button {
+    opacity: 1;
+    background: var(--kingfisher);
+}
+
+.carousel:global.slick-slider.nft-slider .slick-dots-bottom {
+    bottom: -16px;
+}

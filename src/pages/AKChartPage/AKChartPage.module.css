@@ -1,0 +1,27 @@
+.pieChart :global canvas {
+    max-height: 350px;
+}
+
+.AKChartContainer {
+    height: 320px;
+}
+
+.AKChartContainer canvas,
+.AKChartContainer div {
+    height: 100%;
+}
+
+
+.doughnutChartContainer div,
+.doughnutChartContainer canvas {
+    height: 100%;
+}
+
+
+.doughnutChartContainer {
+    height: 320px;
+}
+
+.card {
+    height: 100%;
+}

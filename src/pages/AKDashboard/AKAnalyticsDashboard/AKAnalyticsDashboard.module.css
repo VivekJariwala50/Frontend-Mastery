@@ -1,0 +1,228 @@
+.card {
+    height: 450px;
+}
+
+.customersGraphCard {
+    height: 480px;
+}
+
+.overViewCard {
+    height: 100%;
+}
+
+.overViewCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.salesOverviewCard,
+.overViewRow {
+    height: 100%;
+}
+
+.sliderCard {
+    height: 100%;
+}
+
+.trackProgressBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.earningChartContainer {
+    height: 340px;
+}
+
+.monthlyEarningChartContainer div,
+.monthlyEarningChartContainer canvas,
+.earningChartContainer div,
+.earningChartContainer canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.totalEarningChartContainer {
+    height: 250px;
+}
+
+.customersGraph div,
+.customersGraph canvas,
+.revenueChartContainer div,
+.revenueChartContainer canvas,
+.totalEarningChartContainer div,
+.totalEarningChartContainer canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.revenueChartContainer {
+    height: 220px;
+}
+
+.monthlyEarningChartContainer {
+    height: 450px;
+}
+
+.customersGraph {
+    height: 380px;
+}
+
+.projectsTable :global .ant-table {
+    min-height: 340px;
+}
+
+@media (max-width:1799px) {
+
+    .trackProgressBar:global.ant-progress.ant-progress-circle .ant-progress-inner {
+        width: 220px !important;
+        height: 220px !important;
+        font-size: 34px !important;
+    }
+
+    .card {
+        height: 430px;
+    }
+
+    .monthlyEarningChartContainer {
+        height: 440px;
+    }
+
+}
+
+@media (max-width:1599px) {
+
+    .earningChartContainer {
+        height: 300px;
+    }
+
+    .analyticsProgressCard :global .ant-progress.ant-progress-circle .ant-progress-inner {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .trackProgressBar:global.ant-progress.ant-progress-circle .ant-progress-inner {
+        width: 200px !important;
+        height: 200px !important;
+        font-size: 32px !important;
+    }
+
+    .ant-progress.ant-progress-circle .ant-progress-inner .earningChartContainer {
+        height: 300px;
+    }
+
+    .card.earningChartCard,
+    .card.recentEarningCard {
+        height: 390px;
+    }
+
+    .monthlyEarningChartContainer {
+        height: 420px;
+    }
+
+    .customersGraph {
+        height: 320px;
+    }
+}
+
+@media (max-width:1399px) {
+
+    .earningChartContainer {
+        height: 300px;
+    }
+
+    .card {
+        height: 400px;
+    }
+
+}
+
+@media (max-width:1199px) {
+
+    .earningChartContainer {
+        height: 280px;
+    }
+
+    .monthlyEarningChartContainer {
+        height: 400px;
+    }
+
+    .customersGraphCard {
+        height: auto;
+    }
+
+    .customersGraph {
+        height: 310px;
+    }
+
+    .card.recentEarningCard {
+        height: auto;
+    }
+
+    .card {
+        height: 420px;
+    }
+
+    .card.earningChartCard {
+        height: auto;
+    }
+}
+
+@media (max-width:992px) {
+
+    .monthlyEarningChartContainer {
+        height: 360px;
+    }
+
+    .customersGraphCard {
+        height: auto;
+    }
+
+    .customersGraph {
+        height: 300px;
+    }
+
+    .card {
+        height: 390px;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .recentEarningDetails {
+        max-width: 60%;
+    }
+
+}
+
+@media (max-width:575px) {
+
+    .monthlyEarningChartContainer {
+        height: 320px;
+    }
+
+    .customersGraphCard {
+        height: auto;
+    }
+
+    .customersGraph {
+        height: 280px;
+    }
+
+    .recentEarningDetails {
+        max-width: 100%;
+    }
+
+    .card {
+        height: 358px;
+    }
+
+    .monthlyEarningChartContainer {
+        width: 800px !important;
+    }
+
+}

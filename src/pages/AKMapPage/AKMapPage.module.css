@@ -1,0 +1,22 @@
+.mapCard {
+  height: 400px;
+}
+
+.vectorMapCard {
+  width: 100%;
+  height: 100%;
+}
+
+.worldMap path {
+  fill: rgba(var(--kingfisher-rgb), 0.8);
+  cursor: pointer;
+  outline: none;
+}
+
+.worldMap path:hover {
+  fill: rgba(var(--kingfisher-rgb), 1);
+}
+
+.worldMap path:focus {
+  fill: rgba(var(--kingfisher-rgb), 1);
+}

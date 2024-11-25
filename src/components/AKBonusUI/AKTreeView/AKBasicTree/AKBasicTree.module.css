@@ -1,0 +1,28 @@
+.AKTreeView:global.ant-tree {
+  background: transparent;
+  color: var(--title-color);
+}
+
+.AKTreeView:global.ant-tree .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner {
+  background-color: var(--white);
+}
+
+.AKTreeView:global.ant-tree .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+  background-color: var(--kingfisher);
+  border-color: var(--kingfisher);
+}
+
+.AKTreeView:global.ant-tree .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner:after {
+  background-color: var(--kingfisher);
+}
+
+.AKTreeView:global.ant-tree .ant-tree-checkbox-wrapper:not(.ant-tree-checkbox-wrapper-disabled):hover .ant-tree-checkbox-inner,
+.AKTreeView:global.ant-tree .ant-tree-checkbox:not(.ant-tree-checkbox-disabled):hover .ant-tree-checkbox-inner {
+  border-color: var(--white);
+}
+
+.AKTreeView:global.ant-tree .ant-tree-checkbox-wrapper-checked:not(.ant-tree-checkbox-wrapper-disabled):hover .ant-tree-checkbox-inner,
+.AKTreeView:global.ant-tree .ant-tree-checkbox-checked:not(.ant-tree-checkbox-disabled):hover .ant-tree-checkbox-inner {
+  background-color: var(--kingfisher);
+  border-color: var(--kingfisher);
+}

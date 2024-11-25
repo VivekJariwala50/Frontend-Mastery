@@ -1,0 +1,15 @@
+.AKContentLayout {
+  transition: var(--transition-all);
+  background-color: var(--parrot);
+}
+
+.AKMainContent {
+  padding: 20px;
+  height: 100%;
+}
+
+@media (max-width:767px) {
+  .AKMainContent {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,7 @@
+.AKBasicLoader:global.ant-spin {
+  color: var(--kingfisher);
+}
+
+.AKBasicLoader:global.ant-spin .ant-spin-dot-item {
+  background-color: var(--kingfisher);
+}

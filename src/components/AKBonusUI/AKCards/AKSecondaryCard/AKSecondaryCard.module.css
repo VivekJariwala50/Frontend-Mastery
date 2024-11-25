@@ -1,0 +1,13 @@
+.subtitle {
+    max-width: 90%;
+}
+
+.imgContainer {
+    max-width: 220px;
+    min-width: 220px;
+}
+
+.imgContainer img {
+    max-width: 100%;
+    object-fit: cover;
+}

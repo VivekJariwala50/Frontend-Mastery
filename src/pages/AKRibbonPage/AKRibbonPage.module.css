@@ -1,0 +1,299 @@
+.cardWrapper {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+}
+
+.card {
+  background-color: var(--owl);
+  padding: 20px;
+  border-radius: 8px;
+  transition: var(--transition-all);
+}
+
+/* Basic Ribbon Start */
+.ribbon {
+  left: -1px;
+  top: 10px;
+  background-color: #405189;
+  padding: 5px 12px;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, .15);
+}
+
+.ribbon.success,
+.stripeShapeRibbon.success span,
+.boxRibbon.success span {
+  background-color: #0ab39c;
+}
+
+.ribbon.info,
+.stripeShapeRibbon.info span,
+.boxRibbon.info span {
+  background-color: #299cdb;
+}
+
+.ribbon.right {
+  right: -1px;
+  left: auto;
+  border-radius: 12px 0 0 12px;
+}
+
+/* Basic Ribbon End */
+
+/* Filled Ribbon Start */
+.ribbon.filledRibbon {
+  transform: rotate(-45deg);
+  width: 110px;
+  height: 52px;
+  left: -36px;
+  top: -9px;
+  border-radius: 0;
+}
+
+.ribbon.filledRibbon.right {
+  border-radius: 0;
+  transform: rotate(45deg);
+  right: -38px;
+  left: auto;
+}
+
+/* Filled Ribbon End */
+
+/* Shape Ribbon Start */
+.ribbon.shapeRibbon {
+  border-radius: 0;
+}
+
+.ribbon.shapeRibbon.right {
+  border-radius: 0;
+}
+
+.ribbon.shapeRibbon::before,
+.ribbon.shapeRibbon::after {
+  content: "";
+  position: absolute;
+  border: 14px solid transparent;
+}
+
+.ribbon.shapeRibbon::before {
+  right: -17px;
+  top: 0;
+  border-left-color: #405189;
+  border-top-color: #405189;
+}
+
+.ribbon.shapeRibbon::after {
+  right: -17px;
+  bottom: 0;
+  border-left-color: #405189;
+  border-bottom-color: #405189;
+}
+
+.ribbon.success.shapeRibbon::before {
+  border-left-color: #0ab39c;
+  border-top-color: #0ab39c;
+}
+
+.ribbon.success.shapeRibbon::after {
+  border-left-color: #0ab39c;
+  border-bottom-color: #0ab39c;
+}
+
+.ribbon.right.ribbon.shapeRibbon::after,
+.ribbon.right.shapeRibbon::before {
+  right: auto;
+  left: -17px;
+  border-left-color: transparent;
+}
+
+.ribbon.info.ribbon.shapeRibbon::before {
+  border-right-color: #299cdb;
+  border-top-color: #299cdb;
+}
+
+.ribbon.info.ribbon.shapeRibbon::after {
+  border-right-color: #299cdb;
+  border-bottom-color: #299cdb;
+}
+
+/* Shape Ribbon End */
+
+/* Stripe Shape Ribbon Start */
+.stripeShapeRibbon {
+  border-radius: 0;
+  left: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+}
+
+.stripeShapeRibbon span {
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  line-height: 20px;
+  transform: rotate(-45deg);
+  width: 100px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .06), 0 1px 0 0 rgba(0, 0, 0, .02);
+  top: 19px;
+  left: -21px;
+  font-weight: 600;
+}
+
+.stripeShapeRibbon span {
+  background-color: #405189;
+}
+
+.stripeShapeRibbon span::before,
+.stripeShapeRibbon span::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.stripeShapeRibbon span::before {
+  left: 0;
+  top: 100%;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid #364574;
+  border-top: 3px solid #364574;
+}
+
+.stripeShapeRibbon span::after {
+  right: 0;
+  top: 100%;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid #364574;
+  border-top: 3px solid #364574;
+}
+
+.stripeShapeRibbon.success span::before {
+  border-left: 3px solid #099885;
+  border-top: 3px solid #099885;
+}
+
+.stripeShapeRibbon.success span::after {
+  border-right: 3px solid #099885;
+  border-top: 3px solid #099885;
+}
+
+.stripeShapeRibbon.info span::before {
+  border-left: 3px solid #2385ba;
+  border-top: 3px solid #2385ba;
+}
+
+.stripeShapeRibbon.info span::after {
+  border-right: 3px solid #2385ba;
+  border-top: 3px solid #2385ba;
+}
+
+.stripeShapeRibbon.right {
+  left: auto;
+  right: -5px;
+}
+
+.stripeShapeRibbon.right span {
+  left: auto;
+  right: -21px;
+  transform: rotate(45deg);
+}
+
+/* Stripe Shape Ribbon End */
+
+/* Box Shape Ribbon Start */
+.boxRibbon {
+  top: -6.1px;
+  left: 10px;
+}
+
+.boxRibbon.right {
+  top: -6.1px;
+  right: 10px;
+  left: auto;
+}
+
+.boxRibbon span {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  padding: 12px 8px 10px;
+  border-top-right-radius: 8px;
+  width: 90px;
+  background-color: #405189;
+}
+
+.boxRibbon::after,
+.boxRibbon span::before,
+.boxRibbon span::after {
+  content: "";
+  position: absolute;
+}
+
+.boxRibbon::after {
+  width: 0;
+  height: 0;
+  border-left: 44px solid transparent;
+  border-right: 44px solid transparent;
+  border-top: 10px solid #405189;
+}
+
+.boxRibbon.success::after {
+  border-top: 10px solid #0ab39c;
+}
+
+.boxRibbon.info::after {
+  border-top: 10px solid #299cdb;
+}
+
+.boxRibbon span::before {
+  height: 6px;
+  width: 6px;
+  left: -6px;
+  top: 0;
+  background-color: #405189;
+}
+
+.boxRibbon span::after {
+  height: 6px;
+  width: 8px;
+  left: -8px;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  background-color: #364574;
+}
+
+.boxRibbon.success span::before {
+  background-color: #0ab39c;
+}
+
+.boxRibbon.success span::after {
+  background-color: #099885;
+}
+
+.boxRibbon.info span::before {
+  background-color: #299cdb;
+}
+
+.boxRibbon.info span::after {
+  background-color: #2385ba;
+}
+
+/* Box Shape Ribbon End */
+
+/* Responsive Styles Start */
+@media (max-width:1199px) {
+  .cardWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:767px) {
+  .cardWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

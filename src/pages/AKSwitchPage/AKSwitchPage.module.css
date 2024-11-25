@@ -1,0 +1,23 @@
+.AKSwitchCardWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+}
+
+@media (max-width:1279px) {
+  .AKSwitchCardWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width:991px) {
+  .AKSwitchCardWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:575px) {
+  .AKSwitchCardWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

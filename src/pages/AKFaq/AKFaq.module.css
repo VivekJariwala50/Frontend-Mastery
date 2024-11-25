@@ -1,0 +1,10 @@
+.faqImgContainer {
+    margin: 0px auto;
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+
+.faqImgContainer img {
+    width: 100%;
+    object-fit: contain;
+}

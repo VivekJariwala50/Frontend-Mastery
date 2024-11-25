@@ -1,0 +1,10 @@
+.AKRangeSliderCard {
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 12px;
+}
+
+@media (max-width:991px) {
+  .AKRangeSliderCard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

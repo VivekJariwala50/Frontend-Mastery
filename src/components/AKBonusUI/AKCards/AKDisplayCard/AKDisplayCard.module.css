@@ -1,0 +1,23 @@
+.card {
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: var(--pelican);
+    transition: var(--transition-all);
+    background-color: var(--parrot);
+    box-shadow: 0 0.25px 1.25px var(--kingfisher);
+    max-width: 300px;
+}
+
+.cardImg {
+    background-color: var(--pelican);
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.cardImg svg {
+    color: var(--text-color);
+}

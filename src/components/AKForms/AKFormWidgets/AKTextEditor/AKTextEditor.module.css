@@ -1,0 +1,7 @@
+:global .jodit-wysiwyg{
+    min-height: 150px !important;
+}
+:global .jodit-react-container .jodit-status-bar{
+    height: auto;
+    flex-wrap: wrap;
+}

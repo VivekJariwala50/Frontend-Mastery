@@ -1,0 +1,8 @@
+.AKDirectoryTree:global.ant-tree {
+  background: transparent;
+  color: var(--title-color);
+}
+
+.AKDirectoryTree:global.ant-tree span.ant-tree-switcher.ant-tree-switcher_open {
+  color: var(--kingfisher);
+}

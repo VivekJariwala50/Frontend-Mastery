@@ -1,0 +1,28 @@
+.timeline:global.ant-timeline .ant-timeline-item-head {
+    border: 2px solid !important;
+}
+
+.timeline:global.ant-timeline .ant-timeline-item-head-blue {
+    color: var(--kingfisher);
+    border-color: var(--kingfisher);
+}
+
+.timeline:global.ant-timeline .ant-timeline-item-tail {
+    border-inline-start: 1px solid var(--kingfisher);
+}
+
+.timeline:global.ant-timeline.ant-timeline {
+    color: var(--text-color);
+}
+
+.timeline:global.ant-timeline .ant-timeline-item-head {
+    background-color: transparent;
+}
+
+.timeline:global.ant-timeline .ant-timeline-item {
+    font-size: 17px;
+}
+
+.timeline:global.ant-timeline .ant-timeline-item-head-custom {
+    border: 0 !important;
+}

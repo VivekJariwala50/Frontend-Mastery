@@ -1,0 +1,43 @@
+{
+  "name": "wosadmin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ant-design/charts": "^2.0.3",
+    "@south-paw/react-vector-maps": "^3.2.0",
+    "antd": "^5.14.1",
+    "antd-css-utilities": "^2.0.4",
+    "antd-img-crop": "^4.21.0",
+    "chart.js": "^4.4.2",
+    "clsx": "^2.1.0",
+    "iconsax-react": "^0.0.8",
+    "jodit-react": "^4.0.15",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-otp-input": "^3.1.1",
+    "react-router-dom": "^6.22.0",
+    "remixicon": "^4.1.0",
+    "sweetalert": "^2.1.2",
+    "swiper": "^11.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite": "^5.1.0"
+  }
+}

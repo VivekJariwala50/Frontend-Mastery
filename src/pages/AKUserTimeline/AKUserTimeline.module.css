@@ -1,0 +1,28 @@
+.list {
+    border-radius: 14px;
+    transition: var(--transition-all);
+}
+
+@media (max-width: 1399px) {
+    .list {
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .list {
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .list {
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .list {
+        border-radius: 6px;
+    }
+}

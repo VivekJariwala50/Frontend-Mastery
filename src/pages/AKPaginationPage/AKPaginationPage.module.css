@@ -1,0 +1,10 @@
+.AKPaginationPageCardWrapper {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px;
+}
+
+@media (max-width:991px) {
+  .AKPaginationPageCardWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

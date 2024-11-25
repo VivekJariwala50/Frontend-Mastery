@@ -1,0 +1,52 @@
+.list {
+    border: 0;
+}
+
+.list:global.ant-list .ant-typography mark,
+.list:global.ant-list .ant-list-item {
+    color: var(--title-color);
+}
+
+.list:global.ant-list-split .ant-list-item {
+    border-block-end: 1px solid var(--swifts);
+}
+
+.list:global.ant-list {
+    font-size: 18px;
+}
+
+.list:global.ant-list.ant-list-sm {
+    font-size: 16px;
+}
+
+.list:global.ant-list.ant-list-lg {
+    font-size: 22px;
+}
+
+
+.list:global.ant-list .ant-typography mark {
+    background-color: transparent;
+    padding-right: 5px;
+}
+
+/* RESPONSIVE STYLES START */
+
+@media (max-width:1199px) {
+    .list:global.ant-list.ant-list-lg {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .list:global.ant-list {
+        font-size: 16px;
+    }
+
+    .list:global.ant-list.ant-list-sm {
+        font-size: 14px;
+    }
+
+    .list:global.ant-list.ant-list-lg {
+        font-size: 18px;
+    }
+}

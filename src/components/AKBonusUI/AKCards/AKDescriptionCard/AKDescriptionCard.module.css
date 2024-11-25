@@ -1,0 +1,9 @@
+.analyticsHeroImgContainer {
+    max-width: 200px;
+    width: 100%;
+}
+
+.analyticsHeroImg {
+    width: 100%;
+    object-fit: contain;
+}

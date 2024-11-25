@@ -1,0 +1,89 @@
+.card {
+    height: 450px;
+}
+
+.overViewCard {
+    height: 100%;
+}
+
+.overViewCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overViewRow {
+    height: 100%;
+}
+
+.overViewCardImgContainer {
+    max-width: 180px;
+    min-width: 180px;
+}
+
+.orderStatisticsCard,
+.recordRow {
+    height: 100%;
+}
+
+.orderStatistics {
+    height: 380px;
+}
+
+.saleByCategoryChartContainer div,
+
+.salesOverviewChartContainer div,
+.salesOverviewChartContainer canvas,
+.orderStatistics div,
+.orderStatistics canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.salesOverviewChartContainer {
+    height: 350px;
+}
+
+.saleByCategoryChartContainer {
+    height: 300px;
+}
+
+.saleByCategoryChartContainer canvas {
+    height: 100%;
+}
+
+.savingDayCardImgContainer {
+    height: 100%;
+    max-height: 240px;
+    min-height: 240px;
+    padding-bottom: 0;
+}
+
+.productOverviewTable :global .ant-table {
+    min-height: 420px;
+}
+
+.recentOrdersTable :global .ant-table {
+    min-height: 290px;
+}
+
+.topSellingProducts :global .ant-table {
+    min-height: 290px;
+}
+
+@media (max-width:992px) {
+    .card {
+        height: 350px;
+    }
+
+    .card.orderStatisticsCard,
+    .card.recentOrdersCard {
+        height: auto;
+    }
+
+    .orderStatistics {
+        height: 320px;
+    }
+
+
+}

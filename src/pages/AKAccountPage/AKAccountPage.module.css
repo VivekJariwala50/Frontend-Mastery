@@ -1,0 +1,11 @@
+.accountProfileCard :global .ant-upload button {
+    color: var(--secondary-title-text);
+}
+.accountProfileCard :global button span svg{
+    width: 20px;
+    height: 20px;
+} 
+.accountProfileCard :global .ant-upload-wrapper{
+    display: flex;
+    justify-content: center;
+}

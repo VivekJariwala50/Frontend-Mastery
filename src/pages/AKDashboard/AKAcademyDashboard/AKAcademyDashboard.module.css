@@ -1,0 +1,63 @@
+.card {
+    height: 100%;
+}
+
+.imgCard .cardImgContainer {
+    display: none;
+}
+
+.cardImgContainer {
+    padding-bottom: 0;
+    height: 200px;
+}
+
+.earningChartContainer {
+    height: 350px;
+}
+
+.earningChartContainer div,
+.earningChartContainer canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.courseListTable :global .ant-table {
+    min-height: 375px;
+}
+
+.newStudentsTable :global .ant-table {
+    min-height: 340px;
+}
+
+@media (max-width:1599px) {
+    .newStudentsTable :global .ant-table {
+        min-height: 320px;
+    }
+}
+
+@media (max-width:1199px) {
+    .courseListTable :global .ant-table {
+        min-height: 390px;
+    }
+}
+
+@media (max-width:992px) {
+    .newStudentsTable :global .ant-table {
+        min-height: 320px;
+    }
+}
+
+@media (max-width:767px) {
+    .newStudentsTable :global .ant-table {
+        min-height: 330px;
+    }
+
+    .courseListTable :global .ant-table {
+        min-height: 390px;
+    }
+
+    .earningChartContainer {
+        height: 300px;
+    }
+
+}
